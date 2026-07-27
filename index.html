@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mapa do Rolê — eventos do Rio, no mapa</title>
+<title>Mapa do Rolé — eventos do Rio, no mapa</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <style>
@@ -109,11 +109,10 @@
       <svg viewBox="0 0 24 24" fill="none"><path d="M12 2C7 2 3 6 3 10.5C3 17 12 22 12 22C12 22 21 17 21 10.5C21 6 17 2 12 2Z" fill="#12141c"/><circle cx="12" cy="10" r="3" fill="#cdfb56"/></svg>
     </div>
     <div class="brand-text">
-      <div class="name display">Mapa do Rolê</div>
-      <div class="tag">eventos carregados de events.json</div>
+      <div class="name display">Mapa do Rolé</div>
+      <div class="tag">eventos do Rio, no mapa</div>
     </div>
   </div>
-  <div class="source-badge">📄 dados vindos de <b>events.json</b></div>
 </header>
 <div class="calcada"></div>
 
@@ -147,23 +146,19 @@
       <span>Recorrentes ativos<b id="countRecur">—</b></span>
     </div>
 
-    <div class="howto">
-      <b style="color:var(--ink);">Como adicionar um evento:</b><br>
-      Edite o arquivo <code>events.json</code> direto no GitHub (até pelo celular) e dê commit. O site recarrega os dados sozinho — não precisa tocar neste HTML.
-    </div>
   </aside>
 
   <div class="mapwrap">
     <div class="loading-state" id="loadingState">
       <div class="spinner-big"></div>
-      <div>Carregando eventos de events.json...</div>
+      <div>Carregando eventos...</div>
     </div>
     <div class="error-state hide" id="errorState">
-      ⚠️ Não consegui carregar events.json.<br>
+      ⚠️ Não consegui carregar os eventos.<br>
       <span style="font-size:12px;">Isso é esperado se você abriu este arquivo direto do disco (file://) —<br>navegadores bloqueiam essa leitura por segurança.<br>Funciona normalmente quando hospedado (GitHub Pages, Netlify, etc.).</span>
     </div>
 
-    <div class="map-hint">🔁 no pin = evento recorrente, com data sempre recalculada. Dados vêm de <b>events.json</b>.</div>
+    <div class="map-hint">🔁 no pin = evento recorrente, com data sempre recalculada automaticamente.</div>
     <div id="map"></div>
     <div class="legend" id="legend"></div>
     <div class="detail-card" id="detailCard">
