@@ -1,0 +1,15 @@
+# Copie este arquivo para terraform.tfvars e preencha os valores reais.
+# NUNCA commite o arquivo terraform.tfvars — ele está no .gitignore.
+
+supabase_access_token      = "sbp_xxxxxxxxxxxx"
+supabase_organization_id   = "xxxxxxxxxxxxxxxx"
+supabase_db_password       = "SenhaForte!1234"
+supabase_region            = "sa-east-1"
+
+cloudflare_api_token       = "xxxxxxxxxxxxxxxxxxxx"
+cloudflare_account_id      = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+google_oauth_client_id     = "xxxxxxxxxx.apps.googleusercontent.com"
+google_oauth_client_secret = "GOCSPX-xxxxxxxxxxxxxxxxxx"
+
+project_name = "mapa-do-role"

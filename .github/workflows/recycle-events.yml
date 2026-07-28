@@ -1,0 +1,35 @@
+name: Recycle Events (Weekly)
+
+on:
+  schedule:
+    # Toda segunda-feira às 03:00 UTC (00:00 BRT)
+    - cron: "0 3 * * 1"
+  workflow_dispatch: # permite rodar manualmente
+
+jobs:
+  scrape-and-upsert:
+    name: Scraping e upsert de eventos
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # TODO: adicionar steps de scraping quando o job estiver implementado
+      # Exemplo de estrutura esperada:
+      #
+      # - name: Setup Python / Node (dependendo da linguagem do scraper)
+      #   uses: actions/setup-python@v5
+      #   with:
+      #     python-version: "3.12"
+      #
+      # - name: Install dependencies
+      #   run: pip install -r jobs/requirements.txt
+      #
+      # - name: Run scraper
+      #   run: python jobs/scrape_events.py
+      #   env:
+      #     SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      #     SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+
+      - name: Placeholder — job ainda não implementado
+        run: echo "Job de scraping será implementado em próxima etapa."
